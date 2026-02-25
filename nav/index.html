@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: tools | 莽夫小屋</title>
+  <title>我的常用站点导航 | 莽夫小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="do something cool">
+  <meta name="description" content="&#x2F;* 全局适配yilia主题，避免样式冲突 *&#x2F; .nav-container {   max-width: 1200px;   margin: 20px auto;   padding: 0 20px;   font-family: &quot;Microsoft YaHei&quot;, &quot;Noto Sans SC&quot;, sans-serif; }  &#x2F;* 页面标题 *&#x2F; .nav-title {   text">
 <meta property="og:type" content="website">
-<meta property="og:title" content="莽夫小屋">
-<meta property="og:url" content="http://example.com/tags/tools/index.html">
+<meta property="og:title" content="我的常用站点导航">
+<meta property="og:url" content="http://example.com/nav/index.html">
 <meta property="og:site_name" content="莽夫小屋">
-<meta property="og:description" content="do something cool">
+<meta property="og:description" content="&#x2F;* 全局适配yilia主题，避免样式冲突 *&#x2F; .nav-container {   max-width: 1200px;   margin: 20px auto;   padding: 0 20px;   font-family: &quot;Microsoft YaHei&quot;, &quot;Noto Sans SC&quot;, sans-serif; }  &#x2F;* 页面标题 *&#x2F; .nav-title {   text">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-02-25T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-25T02:30:33.534Z">
 <meta property="article:author" content="JeffRain">
 <meta name="twitter:card" content="summary">
   
@@ -65,7 +67,7 @@
 	        
 				<li><a href="/deck/">游戏设计卡片</a></li>
 	        
-				<li><a href="/tags/tools/">工具</a></li>
+				<li><a href="/nav">导航</a></li>
 	        
 			</ul>
 		</nav>
@@ -152,7 +154,7 @@
 		        
 					<li style="width: 16.666666666666668%"><a href="/deck/">游戏设计卡片</a></li>
 		        
-					<li style="width: 16.666666666666668%"><a href="/tags/tools/">工具</a></li>
+					<li style="width: 16.666666666666668%"><a href="/nav">导航</a></li>
 		        
 				</ul>
 			</nav>
@@ -167,60 +169,260 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2025" class="archive-year">2025</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-page">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2025/12/26/calc/" class="archive-article-date">
-  	<time datetime="2025-12-26T09:13:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-12-26</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2025/12/26/calc/">房贷计算器</a>
+    <h1 class="article-title" itemprop="name">
+      我的常用站点导航
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">tools</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        <a href="/nav/index.html" class="archive-article-date">
+  	<time datetime="2026-02-25T00:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2026-02-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- 适配yilia主题的卡片式导航样式 -->
+<style>
+/* 全局适配yilia主题，避免样式冲突 */
+.nav-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
 
-          
+/* 页面标题 */
+.nav-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
 
+/* 卡片容器：适配PC/移动端，2列→1列 */
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* 分类卡片样式（适配yilia浅色系） */
+.nav-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-top: 3px solid #000;
+}
+
+/* 不同分类卡片的顶部边框色（区分类别） */
+.card-game { border-top-color: #ff7800; }  /* 游戏类-橙色 */
+.card-dev { border-top-color: #722ed1; }   /* 游戏开发-紫色 */
+.card-tool { border-top-color: #13c2c2; }  /* 开发工具-青色 */
+.card-material { border-top-color: #ff4d94; } /* 常用素材-粉色 */
+
+/* 卡片标题 */
+.card-title {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.card-title i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* 站点列表 */
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-list li {
+  margin: 10px 0;
+  padding: 5px 0;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+/* 站点链接样式（适配yilia hover效果） */
+.site-list a {
+  color: #666;
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.site-list a:hover {
+  color: #0088cc;  /* yilia主题默认链接色 */
+  transform: translateX(3px);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .nav-cards {
+    grid-template-columns: 1fr;
+  }
+  .nav-card {
+    padding: 15px;
+  }
+}
+</style>
+
+<div class="nav-container">
+  
+  <div class="nav-cards">
+    <!-- 游戏类卡片 -->
+    <div class="nav-card card-game">
+      <h2 class="card-title">🎮 游戏类</h2>
+      <ul class="site-list">
+        <li><a href="https://play.sneakdoorbeat.net" target="_blank">矩阵潜袭在线对战</a></li>
+        <li><a href="https://zh.boardgamearena.com" target="_blank">BGA 线上桌游</a></li>
+        <li><a href="https://universe.flyff.com" target="_blank">飞飞网页端</a></li>
+        <li><a href="https://pokerogue.net" target="_blank">宝可梦肉鸽 Pokerogue</a></li>
+      </ul>
+    </div>
+    <!-- 游戏开发类卡片 -->
+    <div class="nav-card card-dev">
+      <h2 class="card-title">💻 游戏开发</h2>
+      <ul class="site-list">
+        <li><a href="https://itch.io/" target="_blank">itch.io 游戏分发平台</a></li>
+        <li><a href="https://gmhub.com/home" target="_blank">GMHub 游戏制作社区</a></li>
+        <li><a href="https://opengameart.org/" target="_blank">OpenGameArt 游戏素材</a></li>
+      </ul>
+    </div>
+    <!-- 开发工具类卡片 -->
+    <div class="nav-card card-tool">
+      <h2 class="card-title">🔧 开发工具</h2>
+      <ul class="site-list">
+        <li><a href="https://yandex.aabs.net" target="_blank">Yandex 俄罗斯搜索引擎</a></li>
+        <li><a href="https://godotcn.com" target="_blank">Godot 中文社区</a></li>
+        <li><a href="https://shumeipai.nxez.com/" target="_blank">树莓派实验室</a></li>
+      </ul>
+    </div>
+    <!-- 常用素材类卡片 -->
+    <div class="nav-card card-material">
+      <h2 class="card-title">🎨 常用素材</h2>
+      <ul class="site-list">
+        <li><a href="https://pixellab.ai" target="_blank">Pixellab AI 像素画</a></li>
+        <li><a href="https://pixelgif.cn" target="_blank">像素GIF 像素画教程</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>战士不会倒在冲锋的路上，至少得沾点衣角<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/charge.gif">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/charge.gif">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/nav/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
 
 
           </div>
@@ -230,7 +432,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2025 JeffRain
+    		&copy; 2026 JeffRain
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -246,7 +448,7 @@
 		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -318,15 +520,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Pixel</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Memo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">tools</a>
+                <a href="javascript:void(0)" class="js-tag color1">Pixel</a>
               </li>
             
             <div class="clearfix"></div>
